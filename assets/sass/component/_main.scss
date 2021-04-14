@@ -1,0 +1,121 @@
+.product-slider {
+  cursor: grab;
+  li:focus{
+    outline: none
+  }
+  .chevron {
+    transform: translate(0, -50%);
+    top: 50%;
+    transition: all .2s ease;
+    &.disable{
+      opacity: 0.4;
+      pointer-events: none;
+    }
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &.chevron-left {
+      left: -7px;
+    }
+
+    &.chevron-right {
+      right: -7px;
+    }
+  }
+}
+
+.card {
+  height: 345px;
+
+  .img-card {
+    width: 100%;
+    height: 220px;
+    background-color: $color-white;
+    border-radius: 10px 10px 20px 20px;
+
+    .discont-card {
+      width: 40px;
+      height: 40px;
+      border-radius: 50px;
+      background-color: $color-radical-red;
+      color: $color-white;
+      position: absolute;
+      left: 7px;
+      top: 7px;
+      box-shadow: 2px 3px 4px -1px #0000003b;
+    }
+  }
+
+  .txt-card {
+    div.bgc-islamic-green {
+      width: 40px;
+      height: 40px;
+      border-radius: 50px;
+      color: #fff;
+      position: absolute;
+      right: 27px;
+      top: -20px;
+      box-shadow: 2px 3px 4px -1px #0000003b;
+      border: 4px solid #fff;
+      cursor: pointer;
+      transition: all .33s ease;
+
+      &:hover {
+        background-color: $color-green;
+      }
+    }
+  }
+}
+
+.link-category {
+  > div {
+    @include media-query("(max-width:767px)") {
+      margin-top: 15px;
+    }
+
+    img {
+      height: 124px;
+      @include media-query("(max-width:1199px)") {
+        height: 85px;
+      }
+      @include media-query("(max-width:992px)") {
+        height: 4vw;
+      }
+      @include media-query("(max-width:767px)") {
+        height: 16vw;
+      }
+    }
+
+    span {
+      @include media-query("(max-width:992px)") {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.ad-parent {
+  .ad {
+    img {
+      border: 1px solid $color-dim-gray;
+    }
+  }
+}
+.rtl{
+  .card {
+
+    .img-card {
+      .discont-card {
+        right: 7px;
+        left: auto;
+      }
+    }
+    .txt-card {
+      div.bgc-islamic-green {
+        right: auto;
+        left: 27px;
+      }
+    }
+  }
+}

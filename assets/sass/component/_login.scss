@@ -1,0 +1,57 @@
+.login-popup {
+  .modal-dialog {
+    max-width: 600px !important;
+    transform: translate(0, 20%) !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    @media (min-width: 767px) {
+      max-width: 700px !important;
+      transform: translate(0, 14%) !important;
+    }
+      .modal-content {
+        border: 3px solid $color-radical-red;
+        border-radius: 15px;
+        //.modal-header {
+        //  button {
+        //    position: absolute;
+        //    top: -5px;
+        //    background: #fff;
+        //    border-radius: 100%;
+        //    width: 30px;
+        //    height: 30px;
+        //    border: 3px solid #f02;
+        //    opacity: 1;
+        //    padding: 0;
+        //    span {
+        //      font-size: 26px;
+        //      top: -3px;
+        //      position: absolute;
+        //      left: 5px;
+        //    }
+        //  }
+        //}
+        .modal-body {
+          input:focus {
+            outline: 0;
+          }
+        }
+      }
+    }
+  }
+
+.search-box-modal {
+  .icon-font-search {
+    left: 10px;
+    top: calc(50% + 2px);
+    transform: translate(0, -50%);
+  }
+}
+
+
+
+
+
+
+
