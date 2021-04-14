@@ -2549,4 +2549,35 @@ header .menu-items ul.menu-down {
   min-height: 200px;
   max-height: 300px;
 }
+
+footer {
+  border-top: 3px solid #FA4252;
+}
+
+footer .footer-sidebar-right {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+footer .footer-sidebar-right li i {
+  min-width: 41px;
+  text-align: center;
+}
+
+footer .footer-sidebar-right li h6 {
+  padding-left: 10px;
+}
+
+footer .footer-content-title {
+  border-bottom: 2px solid #FA4252;
+}
+
+footer .footer-content a:hover {
+  color: #FA4252;
+}
+
+.rtl footer .footer-sidebar-right li h6 {
+  padding-left: 0;
+  padding-right: 10px;
+}
 /*# sourceMappingURL=style.css.map */
