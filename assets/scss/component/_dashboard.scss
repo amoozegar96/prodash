@@ -1,0 +1,29 @@
+
+body{
+    background-color: $color-alabaster;
+}
+
+.logo{
+    img{
+        width: 150px;
+    }
+    border-bottom: 2px solid $color-sun;
+}
+.sidebar{
+    .accordion-button{
+        &:not(.collapsed) {
+            .arrow{
+                transform: rotate(180deg);
+                color: $color-sun;
+            }
+        }
+        &::after{
+            display: none;
+        }
+        .arrow{
+            transition: all .5s ease;
+            transform: rotate(0);
+        }
+    }
+}
+

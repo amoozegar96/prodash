@@ -289,8 +289,12 @@ body {
   color: $color-silver-chalice;
 }
 
-.color--malachite {
+.color-malachite {
   color: $color-malachite;
+}
+
+.color-alabaster {
+  color: $color-alabaster;
 }
 
 //==========================================
@@ -325,12 +329,23 @@ body {
   background-color: $color-malachite;
 }
 
+.bgc-alabaster {
+  background-color: $color-alabaster;
+}
 //==========================================
 //icon fonts
 //==========================================
 
 .icon-font-login::before {
   content: "\f100";
+}
+
+.icon-font-arrow-down::before {
+  content: "\f101";
+}
+
+.icon-font-category::before {
+  content: "\f102";
 }
 
 //==========================================
