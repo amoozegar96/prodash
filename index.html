@@ -25,56 +25,82 @@
     <div class="container-fluid">
           <div class="row">
             <div class="col-xl-3 col-lg-4 col-md-5 col-sm-12 sidebar bgc-white px-0">
-                <div class="logo d-flex justify-content-center flex-column align-items-center mx-3 mb-2 mt-4">
-                    <img class="" src="assets/image/logo 07-01.png" alt="logo">
-                    <h6 class="font-size-16 py-2 mt-3">داشبورد اختصاصی پروفست</h6>
-                </div>
-                <div class="accordion mx-3" id="accordionExample">
-                    <div class="accordion-item border-0">
-                        <h2 class="accordion-header" id="headingOne">
-                        <div class="accordion-button bg-white border-0 px-0 d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <div class="d-flex align-items-center">
-                            <i class="icon-font-category color-sun font-size-20"></i>
-                            <span class="px-3 font-size-14">گزینه اول</span>
+                <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12 bgc-white px-0 h-100 overflow-auto">
+                    <div class="logo d-flex justify-content-center flex-column align-items-center mx-3 mb-2 mt-4">
+                        <img class="" src="assets/image/logo 07-01.png" alt="logo">
+                        <h6 class="font-size-16 py-2 mt-3">داشبورد اختصاصی پروفست</h6>
+                    </div>
+                    <div class="accordion mx-3" id="accordionExample">
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header" id="headingOne">
+                            <div class="accordion-button bg-white border-0 px-0 d-flex justify-content-between collapsed cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <div class="d-flex align-items-center">
+                                <i class="icon-font-category color-sun font-size-20"></i>
+                                <span class="px-3 font-size-12">گزینه اول</span>
+                                </div>
+                                <i class="icon-font-arrow-down font-size-8 arrow"></i>
                             </div>
-                            <i class="icon-font-arrow-down font-size-10 arrow"></i>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body py-0">
+                                <ul class="mb-0">
+                                    <li>
+                                        <a href="#" class="text-decoration-none font-size-10">گزینه شماره یک</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none font-size-10">گزینه شماره دو</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none font-size-10">گزینه شماره سه</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
                         </div>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>This is the first item's accordion body.</strong>
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header" id="heading2">
+                            <div class="accordion-button bg-white border-0 px-0 d-flex justify-content-between collapsed cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                <div class="d-flex align-items-center">
+                                <i class="icon-font-category color-sun font-size-20"></i>
+                                <span class="px-3 font-size-12">گزینه اول</span>
+                                </div>
+                                <i class="icon-font-arrow-down font-size-8 arrow"></i>
+                            </div>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body py-0">
+                                <ul class="mb-0">
+                                    <li>
+                                        <a href="#" class="text-decoration-none font-size-10">گزینه شماره یک</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none font-size-10">گزینه شماره دو</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none font-size-10">گزینه شماره سه</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
                         </div>
+    
                         </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            گزینه دوم
-                        </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            گزینه سوم
-                        </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> 
-                        </div>
-                        </div>
-                    </div>
-                    </div>
+                </div>
             </div>
+            <div class="col-xl-9 col-lg-8 col-md-7 col-sm-12 content">
+                <div class="nav-content bg-white border-radius-10 box-shadow-1 my-4 py-4 px-3 d-flex justify-content-between">
+                    <div class="search-box border-radius-10 px-3 py-2 col-9 col-sm-4">
+                        <input class="border-0 w-100" type="text" placeholder="جستجو...">
+                    </div>
+                    <div class="login-box border-radius-10 px-3 py-2 d-flex">
+                        <i class="icon-font-login mx-1 d-flex align-items-center"></i>
+                        <span class="d-none d-md-block mx-1">حساب کاربری</span>
+                    </div>
 
-            </div class="col-xl-9 col-lg-8 col-md-7 col-sm-12">
-            <div>
+                </div>
+                <div>
+                </div>
+            </div>
          </div>
     </div>
 </main>

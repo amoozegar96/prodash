@@ -10,13 +10,23 @@ body{
     border-bottom: 2px solid $color-sun;
 }
 .sidebar{
+    @include media-query("(min-width:992px)"){
+        > div{
+            position: fixed;
+        }
+    }
+    @include media-query("(max-width:991px)"){
+        position: fixed;
+    }
     .accordion-button{
         &:not(.collapsed) {
             .arrow{
                 transform: rotate(180deg);
                 color: $color-sun;
             }
+            color: $color-sun
         }
+        box-shadow: none;
         &::after{
             display: none;
         }
@@ -26,4 +36,21 @@ body{
         }
     }
 }
+.content {
+    .nav-content {
+      width: 100%;
+      border: 1px solid $color-alabaster;
+      .search-box, .login-box {
+        border: 2px solid $color-alabaster;
+      }
+      .search-box {
+        input {
+          outline: none;
+        }
+      }
+      .login-box {
+        cursor: pointer;
+      }
+    }
+  }
 
