@@ -1,56 +1,81 @@
 
-body{
-    background-color: $color-alabaster;
+body {
+  background-color: $color-alabaster;
 }
 
-.logo{
-    img{
-        width: 150px;
-    }
-    border-bottom: 2px solid $color-sun;
+.menu-btn {
+  width: 30px;
+  height: 30px;
+  left: 10px;
+  bottom: 10px;
 }
-.sidebar{
-    @include media-query("(min-width:992px)"){
-        > div{
-            position: fixed;
-        }
-    }
-    @include media-query("(max-width:991px)"){
-        position: fixed;
-    }
-    .accordion-button{
-        &:not(.collapsed) {
-            .arrow{
-                transform: rotate(180deg);
-                color: $color-sun;
-            }
-            color: $color-sun
-        }
-        box-shadow: none;
-        &::after{
-            display: none;
-        }
-        .arrow{
-            transition: all .5s ease;
-            transform: rotate(0);
-        }
-    }
+
+.logo {
+  img {
+    width: 150px;
+  }
+
+  border-bottom: 2px solid $color-sun;
 }
-.content {
-    .nav-content {
-      width: 100%;
-      border: 1px solid $color-alabaster;
-      .search-box, .login-box {
-        border: 2px solid $color-alabaster;
-      }
-      .search-box {
-        input {
-          outline: none;
-        }
-      }
-      .login-box {
-        cursor: pointer;
-      }
+
+.sidebar {
+  z-index: 20;
+  right: -100%;
+  transition: all .5s ease;
+  &.active{
+    right: 0;
+  }
+  @include media-query("(min-width:992px)") {
+    > div {
+      position: fixed;
     }
   }
+  @include media-query("(max-width:991px)") {
+    position: fixed;
+    height: 100%;
+  }
+
+  .accordion-button {
+    &:not(.collapsed) {
+      .arrow {
+        transform: rotate(180deg);
+        color: $color-sun;
+      }
+
+      color: $color-sun
+    }
+
+    box-shadow: none;
+
+    &::after {
+      display: none;
+    }
+
+    .arrow {
+      transition: all .5s ease;
+      transform: rotate(0);
+    }
+  }
+}
+
+.content {
+  .nav-content {
+    width: 100%;
+    border: 1px solid $color-alabaster;
+
+    .search-box, .login-box {
+      border: 2px solid $color-alabaster;
+    }
+
+    .search-box {
+      input {
+        outline: none;
+      }
+    }
+
+    .login-box {
+      cursor: pointer;
+    }
+  }
+}
 
