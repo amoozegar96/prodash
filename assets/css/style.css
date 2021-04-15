@@ -190,6 +190,18 @@ body {
 .color-black {
   color: #000; }
 
+.color-lochmara {
+  color: #0680CC; }
+
+.color-sun {
+  color: #FCAC13; }
+
+.color-silver-chalice {
+  color: #A5A5A5; }
+
+.color--malachite {
+  color: #0DB413; }
+
 .bgc-white {
   background-color: #fff; }
 
@@ -198,6 +210,18 @@ body {
 
 .bgc-black {
   background-color: #000; }
+
+.bgc-lochmara {
+  background-color: #0680CC; }
+
+.bgc-sun {
+  background-color: #FCAC13; }
+
+.bgc-silver-chalice {
+  background-color: #A5A5A5; }
+
+.bgc-malachite {
+  background-color: #0DB413; }
 
 .icon-font-login::before {
   content: "\f100"; }
