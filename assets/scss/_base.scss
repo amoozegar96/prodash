@@ -270,6 +270,18 @@ body {
 .color-black {
   color: $color-black;
 }
+.color-lochmara {
+  color: $color-lochmara;
+}
+.color-sun {
+  color: $color-sun;
+}
+.color-silver-chalice {
+  color: $color-silver-chalice;
+}
+.color--malachite {
+  color: $color-malachite;
+}
 
 //==========================================
 //background colors
@@ -287,7 +299,20 @@ body {
   background-color: $color-black;
 }
 
+.bgc-lochmara {
+  background-color: $color-lochmara;
+}
 
+.bgc-sun {
+  background-color: $color-sun;
+}
+
+.bgc-silver-chalice{
+  background-color: $color-silver-chalice;
+}
+.bgc-malachite{
+  background-color: $color-malachite;
+}
 
 //==========================================
 //icon fonts
