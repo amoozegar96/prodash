@@ -1,6 +1,9 @@
-@include font-face(cairo, '../fonts/cairo/woff/Cairo-Regular', normal, normal, woff);
-@include font-face(cairo, '../fonts/cairo/woff/Cairo-Bold', bold, normal, woff);
-@include font-face(cairo, '../fonts/cairo/woff/Cairo-Light', 300, normal, woff);
+@include font-face(iran-sans, '../fonts/iran-sans/IRANSansWeb', normal, normal, woff);
+@include font-face(iran-sans, '../fonts/iran-sans/IRANSansWeb_Bold', bold, normal, woff);
+@include font-face(iran-sans, '../fonts/iran-sans/IRANSansWeb_light', 300, normal, woff);
+@include font-face(iran-sans, '../fonts/iran-sans/IRANSansWeb_Medium', 500, normal, woff);
+@include font-face(iran-sans, '../fonts/iran-sans/IRANSansWeb_Black', 900, normal, woff);
+@include font-face(iran-sans, '../fonts/iran-sans/IRANSansWeb_UltraLight', 100, normal, woff);
 @include font-face(icon-font, '../fonts/icon-font/icon-font', normal, normal, woff);
 
 [class*="font-weight-"] {
