@@ -76,6 +76,12 @@ body {
     .login-box {
       cursor: pointer;
     }
+
+    .btn-group {
+      .dropdown-menu{
+        min-width: 8.5rem;
+      }
+    }
   }
 }
 
