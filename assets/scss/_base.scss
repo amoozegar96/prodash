@@ -82,6 +82,10 @@ body {
   object-fit: cover;
 }
 
+.none-hover:hover{
+  background-color: transparent;
+  color: inherit;
+}
 //==========================================
 // line height
 //==========================================
@@ -348,16 +352,8 @@ body {
   content: "\f102";
 }
 
-.icon-font-hammer::before {
-  content: "\f103";
-}
-
-.icon-font-close::before {
-  content: "\f104";
-}
-
 .icon-font-exit::before {
-  content: "\f107";
+  content: "\f103";
 }
 
 //==========================================
