@@ -17,6 +17,8 @@
     <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- plugins css links -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/SunEditor/css/suneditor.min.css">
 </head>
 
 <body class="rtl">
@@ -47,7 +49,7 @@
                                      aria-controls="collapseOne1">
                                     <div class="d-flex align-items-center">
                                         <i class="icon-font-category color-sun font-size-20"></i>
-                                        <span class="px-3 font-size-12">ورودی ها (inputs)</span>
+                                        <span class="px-3 font-size-12">فرم(forms)</span>
                                     </div>
                                     <i class="icon-font-arrow-down font-size-8 arrow"></i>
                                 </div>
@@ -57,30 +59,31 @@
                                 <div class="accordion-body py-0">
                                     <ul class="mb-0">
                                         <li>
-                                            <a href="#inputs1" class="text-decoration-none font-size-10">سایزبندی ورودی ها</a>
+                                            <a href="forms.html#inputs1" class="text-decoration-none font-size-10">سایزبندی ورودی ها</a>
                                         </li>
                                         <li>
-                                            <a href="#inputs2" class="text-decoration-none font-size-10">چک باکس ها</a>
+                                            <a href="forms.html#inputs2" class="text-decoration-none font-size-10">چک باکس ها</a>
                                         </li>
                                         <li>
-                                            <a href="#inputs3" class="text-decoration-none font-size-10">ورودی چندگانه</a>
+                                            <a href="forms.html#inputs3" class="text-decoration-none font-size-10">ورودی چندگانه</a>
                                         </li>
                                         <li>
-                                            <a href="#inputs4" class="text-decoration-none font-size-10">افزونه چندگانه</a>
-                                        </li><li>
-                                            <a href="#inputs5" class="text-decoration-none font-size-10">افزونه و دکمه ها</a>
+                                            <a href="forms.html#inputs4" class="text-decoration-none font-size-10">افزونه چندگانه</a>
                                         </li>
                                         <li>
-                                            <a href="#inputs6" class="text-decoration-none font-size-10">دکمه های تقسیم شده</a>
+                                            <a href="forms.html#inputs5" class="text-decoration-none font-size-10">افزونه و دکمه ها</a>
                                         </li>
                                         <li>
-                                            <a href="#inputs7" class="text-decoration-none font-size-10">انتخابگر سفارشی</a>
+                                            <a href="forms.html#inputs6" class="text-decoration-none font-size-10">دکمه های تقسیم شده</a>
                                         </li>
                                         <li>
-                                            <a href="#inputs8" class="text-decoration-none font-size-10">انتخاب فایل</a>
+                                            <a href="forms.html#inputs7" class="text-decoration-none font-size-10">انتخابگر سفارشی</a>
                                         </li>
                                         <li>
-                                            <a href="#inputs9" class="text-decoration-none font-size-10">برچسب شناور</a>
+                                            <a href="forms.html#inputs8" class="text-decoration-none font-size-10">انتخاب فایل</a>
+                                        </li>
+                                        <li>
+                                            <a href="forms.html#inputs9" class="text-decoration-none font-size-10">برچسب شناور</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -103,24 +106,29 @@
                                 <div class="accordion-body py-0">
                                     <ul class="mb-0">
                                         <li>
-                                            <a href="#buttons" class="text-decoration-none font-size-10">دکمه ها (buttons)</a>
+                                            <a href="#buttons" class="text-decoration-none font-size-10">دکمه ها
+                                                (buttons)</a>
                                         </li>
                                         <li>
-                                            <a href="#checkbox" class="text-decoration-none font-size-10">کادر انتخاب (checkbox)</a>
+                                            <a href="#checkbox" class="text-decoration-none font-size-10">کادر انتخاب
+                                                (checkbox)</a>
                                         </li>
                                         <li>
-                                            <a href="#radio" class="text-decoration-none font-size-10">دکمه رادیویی (radio button)
+                                            <a href="#radio" class="text-decoration-none font-size-10">دکمه رادیویی
+                                                (radio button)
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#switch" class="text-decoration-none font-size-10">دکمه تعویض (switch)</a>
+                                            <a href="#switch" class="text-decoration-none font-size-10">دکمه تعویض
+                                                (switch)</a>
                                         </li>
                                         <li>
                                             <a href="#range" class="text-decoration-none font-size-10">دکمه رنج (range)
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#dropdown" class="text-decoration-none font-size-10">دکمه کشویی (dropdown)
+                                            <a href="#dropdown" class="text-decoration-none font-size-10">دکمه کشویی
+                                                (dropdown)
                                             </a>
                                         </li>
                                     </ul>
@@ -1419,7 +1427,7 @@
                             <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 50">
                                 <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
                                     <div class="toast-header">
-<!--                                        <img src="..." class="rounded me-2" alt="...">-->
+                                        <img src="..." class="rounded me-2" alt="...">
                                         <strong class="me-auto">Bootstrap</strong>
                                         <small>11 mins ago</small>
                                         <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -1483,6 +1491,15 @@
                     </div>
                     <!-- ------------------------end charts ----------------------- -->
 
+                    <!-- ------------------------start WYSIWYG ----------------------- -->
+                    <div id="WYSIWYG" class="pb-5">
+                        <h4 class="border-bottom border-top py-3 my-4"> chart js (amchart) </h4>
+                        <div class="p-5" dir="ltr">
+                            <textarea id="editor" class="w-100">Hello World!</textarea>
+                        </div>
+                    </div>
+                    <!-- ------------------------end WYSIWYG ----------------------- -->
+
                 </div>
                 <!-- ------------------------end forms----------------------- -->
             </div>
@@ -1498,10 +1515,14 @@
 
 <script src="assets/vendors/jquery/jquery-3.3.1.min.js"></script>
 <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- plugins js link -->
 <script src="assets/vendors/amcharts.js/js/core.js"></script>
 <script src="assets/vendors/amcharts.js/js/charts.js"></script>
 <script src="assets/vendors/amcharts.js/js/animated.js"></script>
+<script src="assets/vendors/SunEditor/js/suneditor.min.js"></script>
+<script src="assets/js/doc.js"></script>
+
 <script src="assets/js/main.js"></script>
-<script src="assets/js/charts.js"></script>
 </body>
 </html>
