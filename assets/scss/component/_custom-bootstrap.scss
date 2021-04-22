@@ -1,0 +1,18 @@
+.form-control {
+    &.input-custom-orange {
+        font-size: 1rem;
+        color: #cecece;
+        background-color: $color-white;
+        border: 2px solid $color-sun;
+        border-radius: .25rem;
+
+        &:focus {
+            font-size: 1rem;
+            color: $color-sun;
+            background-color: $color-lochmara;
+            border-color: $color-sun;
+            outline: 0;
+            box-shadow: 0 0 0 0.25rem $color-sun;
+        }
+    }
+}
