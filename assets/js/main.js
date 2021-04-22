@@ -39,3 +39,15 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
 });
 //----------------tooltip-----------------
+//----------------toast-----------------
+var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+var toastList = toastElList.map(function (toastEl) {
+    return new bootstrap.Toast(toastEl)
+})
+var liveToastBtn = document.getElementById('liveToastBtn'),
+liveToast = document.getElementById('liveToast');
+liveToastBtn.addEventListener('click', function () {
+    var showToast = new bootstrap.Toast(liveToast);
+    showToast.show()
+})
+//----------------toast-----------------
