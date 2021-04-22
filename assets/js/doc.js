@@ -11,16 +11,18 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 });
 //----------------tooltip-----------------
 //----------------toast-----------------
-var toastElList = [].slice.call(document.querySelectorAll('.toast'))
-var toastList = toastElList.map(function (toastEl) {
-    return new bootstrap.Toast(toastEl)
-})
-var liveToastBtn = document.getElementById('liveToastBtn'),
-    liveToast = document.getElementById('liveToast');
-liveToastBtn.addEventListener('click', function () {
-    var showToast = new bootstrap.Toast(liveToast);
-    showToast.show()
-})
+if ($(".toast").length[0]) {
+    var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+    var toastList = toastElList.map(function (toastEl) {
+        return new bootstrap.Toast(toastEl)
+    })
+    var liveToastBtn = document.getElementById('liveToastBtn'),
+        liveToast = document.getElementById('liveToast');
+    liveToastBtn.addEventListener('click', function () {
+        var showToast = new bootstrap.Toast(liveToast);
+        showToast.show()
+    })
+}
 //----------------toast-----------------
 //----------------charts-----------------
 am4core.ready(function() {
@@ -317,6 +319,6 @@ am4core.ready(function() {
 }); // end am4core.ready()
 //----------------charts-----------------
 //----------------summernote-----------------
-SUNEDITOR.create('editor');
+// SUNEDITOR.create('editor');
 
 //----------------summernote-----------------
