@@ -112,6 +112,16 @@ body {
   box-shadow: -1px 3px 10px 2px rgba(0, 0, 0, 0.04);
 }
 
+.box-shadow-custom {
+  box-shadow: -1px 3px 10px 2px $color-sun-50;
+}
+
+.box-shadow-custom-focus {
+  &:focus{
+    box-shadow: 0 0 0 0.25rem $color-sun-50;
+  }
+}
+
 
 //==========================================
 //text decoration
@@ -380,4 +390,29 @@ body {
   z-index: 19;
   position: fixed;
   display: none;
+}
+
+//==========================================
+//hover custom
+//==========================================
+.hover-custom{
+  &:hover{
+    background-color: $color-mango-tango;
+    color: $color-white;
+    
+  }
+}
+
+//==========================================
+//active custom
+//==========================================
+.active-custom{
+  &:active{
+    background-color: $color-sun;
+    box-shadow: 0 0 0 0.25rem $color-sun-50 !important;
+  }
+  &.show{
+    background-color: $color-sun !important;
+    box-shadow: 0 0 0 0.25rem $color-sun-50 !important;
+  }
 }
