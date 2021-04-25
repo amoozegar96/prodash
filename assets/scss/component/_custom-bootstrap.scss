@@ -69,18 +69,46 @@
 
 .page-link {
 
-    &.page-link-custom{
+    &.page-link-custom {
         padding: .375rem .75rem;
-    color: #fcac13;
+        color: #fcac13;
 
-    &:hover {
-        background-color: #fcac13;
-        color: #f8f9fa;
+        &:hover {
+            background-color: #fcac13;
+            color: #f8f9fa;
+        }
+
+        &:focus {
+            background-color: #fcac13;
+            color: #f8f9fa;
+            box-shadow: 0 0 0 0.25rem $color-sun-50 !important;
+        }
+    }
+}
+
+.card-img-top {
+
+    &.img-custom {
+        border: 10px solid $color-sun;
+    }
+}
+
+.img-fluid{
+
+    &.img-fluid-custom{
+        border: 5px solid $color-sun;
+        border-radius: 20px;
+    }
+}
+
+.accordion-button{
+
+    &:not(.collapsed){
+        background-color: $color-sun;
+        color: $color-white;
     }
     &:focus{
-        background-color: #fcac13;
-        color: #f8f9fa;
-        box-shadow: 0 0 0 0.25rem $color-sun-50 !important;
-    }
+        border-color: $color-sun-50;
+        box-shadow: 0 0 0 0.25rem $color-sun-50;
     }
 }
