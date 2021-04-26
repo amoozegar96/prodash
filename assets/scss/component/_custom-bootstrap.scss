@@ -112,3 +112,111 @@
         box-shadow: 0 0 0 0.25rem $color-sun-50;
     }
 }
+
+
+
+//------custom select--------
+
+.custom-select-wrapper {
+    position: relative;
+    user-select: none;
+    width: 100%;
+}
+.custom-select {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    // border: 2px solid $color-sun;
+}
+.custom-select__trigger {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 22px;
+    font-size: 20px;
+    font-weight: 500;
+    color: $color-sun;
+    height: 50px;
+    line-height: 60px;
+    background: #ffffff;
+    cursor: pointer;
+    border: 3px solid $color-sun;
+    border-radius: 7px;
+
+}
+.custom-options {
+    position: absolute;
+    display: block;
+    top: 103%;
+    left: 0;
+    right: 0;
+    border: 3px solid $color-sun;
+    border-top: 0;
+    background: #fff;
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 2;
+    border-radius: 7px;
+
+}
+.custom-select.open .custom-options {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+.custom-option {
+    position: relative;
+    display: block;
+    padding: 0px 22px 0 22px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #3b3b3b;
+    line-height: 40px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.custom-option:hover {
+    cursor: pointer;
+    background-color: $color-sun;
+    border-radius: 5px;
+}
+.custom-option.selected {
+    color: #ffffff;
+    background-color: $color-mango-tango;
+    border-radius: 5px;
+}
+.arrow {
+    position: relative;
+    height: 15px;
+    width: 15px;
+}
+.arrow::before, .arrow::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 0.15rem;
+    height: 100%;
+    transition: all 0.5s;
+}
+.arrow::before {
+    left: -5px;
+    transform: rotate(-45deg);
+    background-color: $color-sun;
+}
+.arrow::after {
+    left: 5px;
+    transform: rotate(45deg);
+    background-color: $color-sun;
+}
+.open .arrow::before {
+    left: -5px;
+    transform: rotate(45deg);
+}
+.open .arrow::after {
+    left: 5px;
+    transform: rotate(-45deg);
+}
