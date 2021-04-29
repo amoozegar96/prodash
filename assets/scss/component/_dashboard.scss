@@ -64,15 +64,6 @@ body {
       }
     }
 
-    .accordion-body{
-      transition: padding .5s ease;
-      ul{
-        transition: padding .5s ease;
-        li{
-          transition: padding .5s ease;
-        }
-      }
-    }
   }
   .active-collapsing{
     .collapsing-sidebar{
@@ -114,15 +105,6 @@ body {
           &.arrow{
             display: none;
           }
-        }
-      }
-    }
-    .accordion-body{
-      padding: 0;
-      ul{
-        padding: 0;
-        li{
-          border-bottom: 1px solid $color-sun;
         }
       }
     }

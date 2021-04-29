@@ -447,15 +447,6 @@ body {
   position: relative;
   background-color: #fff;
 }
-.sidebar .sidebar-content .accordion-body {
-  transition: padding 0.5s ease;
-}
-.sidebar .sidebar-content .accordion-body ul {
-  transition: padding 0.5s ease;
-}
-.sidebar .sidebar-content .accordion-body ul li {
-  transition: padding 0.5s ease;
-}
 .sidebar .active-collapsing .collapsing-sidebar {
   padding-left: 0;
 }
@@ -485,15 +476,6 @@ body {
 }
 .sidebar .active-collapsing .accordion .accordion-button i.arrow {
   display: none;
-}
-.sidebar .active-collapsing .accordion-body {
-  padding: 0;
-}
-.sidebar .active-collapsing .accordion-body ul {
-  padding: 0;
-}
-.sidebar .active-collapsing .accordion-body ul li {
-  border-bottom: 1px solid #FCAC13;
 }
 .sidebar .logo {
   border-bottom: 2px solid #FCAC13;

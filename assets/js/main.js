@@ -38,12 +38,16 @@ $(".sidebar a").click(function () {
     $(this).addClass("color-sun").parent().siblings("li").find("a").removeClass("color-sun")
 });
 
+$("[data-bs-toggle]").click(function () {
+    var _self = $(this);
+    _self.parents(".active-collapsing").find(".collapsing-sidebar").trigger("click");
+});
 $(".collapsing-sidebar").click(function(){
     var _self = $(this);
+    _self.parents(".sidebar-content:not(.active-collapsing)").find("[aria-expanded=true]").trigger("click");
     _self.parents(".sidebar-content").toggleClass("col-xl-3 col-lg-4").toggleClass("col-xl-1 col-lg-1").toggleClass("active-collapsing");
     _self.parents(".sidebar").toggleClass("col-xl-3 col-lg-4").toggleClass("col-xl-1 col-lg-1").toggleClass("active-collapsing");
     _self.parents(".sidebar").siblings(".content").toggleClass("col-xl-9 col-lg-10").toggleClass("col-xl-11 col-lg-11");
-
 });
 
 if ($("[data-scroll]").length) {
