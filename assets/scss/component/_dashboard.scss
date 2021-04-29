@@ -48,12 +48,28 @@ body {
         opacity: 1;
         transition: all .5s ease;
       }
-      i{
-        &:not(.arrow){
-          transition: all .5s ease;
-          position: relative;
-          transform: scale(1);
-          right: 0;
+      div{
+        width: auto;
+        transition: all .5s ease;
+
+        i{
+          &:not(.arrow){
+            transition: all .5s ease;
+            left: 0;
+            transform: translate(0, 0) scale(1);
+            position: relative;
+            background-color: $color-white;
+          }
+        }
+      }
+    }
+
+    .accordion-body{
+      transition: padding .5s ease;
+      ul{
+        transition: padding .5s ease;
+        li{
+          transition: padding .5s ease;
         }
       }
     }
@@ -76,19 +92,37 @@ body {
       }
     }
     .accordion{
-      pointer-events: none;
+      //pointer-events: none;
       .accordion-button{
         span,a{
           opacity: 0;
         }
+
+        div{
+          width: 100%;
+          i {
+            &:not(.arrow) {
+              left: -50%;
+              transform: translate(50%, 0) scale(1.8);
+            }
+          }
+        }
         i{
           &:not(.arrow){
             transform: scale(1.8);
-            right: 22px;
           }
           &.arrow{
             display: none;
           }
+        }
+      }
+    }
+    .accordion-body{
+      padding: 0;
+      ul{
+        padding: 0;
+        li{
+          border-bottom: 1px solid $color-sun;
         }
       }
     }

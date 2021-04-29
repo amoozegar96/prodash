@@ -436,11 +436,25 @@ body {
   opacity: 1;
   transition: all 0.5s ease;
 }
-.sidebar .sidebar-content .accordion-button i:not(.arrow) {
+.sidebar .sidebar-content .accordion-button div {
+  width: auto;
   transition: all 0.5s ease;
+}
+.sidebar .sidebar-content .accordion-button div i:not(.arrow) {
+  transition: all 0.5s ease;
+  left: 0;
+  transform: translate(0, 0) scale(1);
   position: relative;
-  transform: scale(1);
-  right: 0;
+  background-color: #fff;
+}
+.sidebar .sidebar-content .accordion-body {
+  transition: padding 0.5s ease;
+}
+.sidebar .sidebar-content .accordion-body ul {
+  transition: padding 0.5s ease;
+}
+.sidebar .sidebar-content .accordion-body ul li {
+  transition: padding 0.5s ease;
 }
 .sidebar .active-collapsing .collapsing-sidebar {
   padding-left: 0;
@@ -456,18 +470,30 @@ body {
   font-size: 0;
   margin: 0 !important;
 }
-.sidebar .active-collapsing .accordion {
-  pointer-events: none;
-}
 .sidebar .active-collapsing .accordion .accordion-button span, .sidebar .active-collapsing .accordion .accordion-button a {
   opacity: 0;
 }
+.sidebar .active-collapsing .accordion .accordion-button div {
+  width: 100%;
+}
+.sidebar .active-collapsing .accordion .accordion-button div i:not(.arrow) {
+  left: -50%;
+  transform: translate(50%, 0) scale(1.8);
+}
 .sidebar .active-collapsing .accordion .accordion-button i:not(.arrow) {
   transform: scale(1.8);
-  right: 22px;
 }
 .sidebar .active-collapsing .accordion .accordion-button i.arrow {
   display: none;
+}
+.sidebar .active-collapsing .accordion-body {
+  padding: 0;
+}
+.sidebar .active-collapsing .accordion-body ul {
+  padding: 0;
+}
+.sidebar .active-collapsing .accordion-body ul li {
+  border-bottom: 1px solid #FCAC13;
 }
 .sidebar .logo {
   border-bottom: 2px solid #FCAC13;
