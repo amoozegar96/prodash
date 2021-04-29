@@ -41,12 +41,7 @@ body {
     }
     .accordion-button{
       span,a{
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        display: inline-block;
         opacity: 1;
-        transition: all .5s ease;
       }
       div{
         width: auto;
@@ -86,7 +81,23 @@ body {
       //pointer-events: none;
       .accordion-button{
         span,a{
+          z-index: 1;
+          position: absolute;
+          top: -8px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          padding: 4px !important;
+          text-align: center;
+          background-color: #fcac13;
+          color: #fff;
+          border-radius: 5px;
           opacity: 0;
+          visibility: hidden;
+          &:hover{
+            opacity: 1;
+            visibility: visible;
+          }
         }
 
         div{
@@ -95,6 +106,12 @@ body {
             &:not(.arrow) {
               left: -50%;
               transform: translate(50%, 0) scale(1.8);
+              &:hover{
+                + span, + a{
+                  opacity: 1;
+                  visibility: visible;
+                }
+              }
             }
           }
         }

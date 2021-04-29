@@ -429,12 +429,7 @@ body {
   transition: all 0.5s ease;
 }
 .sidebar .sidebar-content .accordion-button span, .sidebar .sidebar-content .accordion-button a {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  display: inline-block;
   opacity: 1;
-  transition: all 0.5s ease;
 }
 .sidebar .sidebar-content .accordion-button div {
   width: auto;
@@ -462,7 +457,23 @@ body {
   margin: 0 !important;
 }
 .sidebar .active-collapsing .accordion .accordion-button span, .sidebar .active-collapsing .accordion .accordion-button a {
+  z-index: 1;
+  position: absolute;
+  top: -8px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 4px !important;
+  text-align: center;
+  background-color: #fcac13;
+  color: #fff;
+  border-radius: 5px;
   opacity: 0;
+  visibility: hidden;
+}
+.sidebar .active-collapsing .accordion .accordion-button span:hover, .sidebar .active-collapsing .accordion .accordion-button a:hover {
+  opacity: 1;
+  visibility: visible;
 }
 .sidebar .active-collapsing .accordion .accordion-button div {
   width: 100%;
@@ -470,6 +481,10 @@ body {
 .sidebar .active-collapsing .accordion .accordion-button div i:not(.arrow) {
   left: -50%;
   transform: translate(50%, 0) scale(1.8);
+}
+.sidebar .active-collapsing .accordion .accordion-button div i:not(.arrow):hover + span, .sidebar .active-collapsing .accordion .accordion-button div i:not(.arrow):hover + a {
+  opacity: 1;
+  visibility: visible;
 }
 .sidebar .active-collapsing .accordion .accordion-button i:not(.arrow) {
   transform: scale(1.8);
