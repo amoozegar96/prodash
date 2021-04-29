@@ -22,6 +22,9 @@ $(".menu-items ul li div i.icon-font-plus-menu").click(function () {
 
 $(".menu-btn").click(function (e) {
     $(".sidebar").addClass("active");
+    if ($(".sidebar .active-collapsing").length) {
+        $(".sidebar .active-collapsing .collapsing-sidebar").trigger("click");
+    }
     $(".black-page").fadeIn();
     $("html").css({overflow: "hidden"});
     e.stopPropagation();
@@ -33,4 +36,24 @@ $("[href='"+get_hash+"']").addClass("color-sun");
 $("[href='"+get_hash+"']").parents(".accordion-collapse").siblings("h2").find(".accordion-button").trigger("click");
 $(".sidebar a").click(function () {
     $(this).addClass("color-sun").parent().siblings("li").find("a").removeClass("color-sun")
-})
+});
+
+$(".collapsing-sidebar").click(function(){
+    var _self = $(this);
+    _self.parents(".sidebar-content").toggleClass("col-xl-3 col-lg-4").toggleClass("col-xl-1 col-lg-1").toggleClass("active-collapsing");
+    _self.parents(".sidebar").toggleClass("col-xl-3 col-lg-4").toggleClass("col-xl-1 col-lg-1").toggleClass("active-collapsing");
+    _self.parents(".sidebar").siblings(".content").toggleClass("col-xl-9 col-lg-10").toggleClass("col-xl-11 col-lg-11");
+
+});
+
+if ($("[data-scroll]").length) {
+    $("[data-scroll]").overlayScrollbars({
+        className: "os-theme-dark",
+        normalizeRTL: true,
+        autoHide: "never",
+        overflowBehavior : {
+            x : "hidden",
+            y : "scroll"
+        },
+    });
+}

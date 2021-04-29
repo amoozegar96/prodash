@@ -16,6 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
     <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/OverlayScrollbars/css/OverlayScrollbars.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- plugins css links -->
     <link rel="stylesheet" type="text/css" href="assets/vendors/SunEditor/css/suneditor.min.css">
@@ -36,10 +37,13 @@
                 <div class="d-flex d-lg-none justify-content-end p-3">
                     <i class="icon-font-close close-icon"></i>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12 bgc-white px-0 h-100 overflow-auto">
+                <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12 sidebar-content bgc-white px-0 h-100 overflow-auto" data-scroll>
+                    <div class="position-absolute collapsing-sidebar bgc-sun d-flex justify-content-center align-items-center cursor-pointer">
+                        <i class="icon-font-arrow-right font-size-16 color-white"></i>
+                    </div>
                     <div class="logo d-flex justify-content-center flex-column align-items-center mx-3 mb-2 mt-4">
                         <img class="" src="assets/image/logo 07-01.png" alt="logo">
-                        <h6 class="font-size-16 py-2 mt-3">داشبورد اختصاصی پروفست</h6>
+                        <h6 class="font-size-16 py-2 mt-3 text-no-wrap">داشبورد اختصاصی پروفست</h6>
                     </div>
                     <div class="accordion mx-3" id="accordionExample1">
                         <div class="accordion-item border-0">
@@ -174,9 +178,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="border-0 py-2">
-                            <h2 class="" id="heading4">
-                                <div class="bg-white border-0 px-0 d-flex justify-content-between  cursor-pointer">
+                        <div class="border-0">
+                            <h2 class="mb-0" id="heading4">
+                                <div class="accordion-button collapsed bg-white border-0 px-0 d-flex justify-content-between cursor-pointer">
                                     <div class="d-flex align-items-center">
                                         <i class="icon-font-category color-sun font-size-20"></i>
                                         <a href="tables.html#Table" class="px-3 font-size-12 text-decoration-none">جدول ها(Table)
@@ -185,9 +189,9 @@
                                 </div>
                             </h2>
                         </div>
-                        <div class="border-0 py-2">
-                            <h2 class="" id="heading4">
-                                <div class="bg-white border-0 px-0 d-flex justify-content-between  cursor-pointer">
+                        <div class="border-0">
+                            <h2 class="mb-0" id="heading5">
+                                <div class="accordion-button collapsed bg-white border-0 px-0 d-flex justify-content-between cursor-pointer">
                                     <div class="d-flex align-items-center">
                                         <i class="icon-font-category color-sun font-size-20"></i>
                                         <a href="cards.html#card" class="px-3 font-size-12 text-decoration-none">کارت(Card)
@@ -196,9 +200,9 @@
                                 </div>
                             </h2>
                         </div>
-                        <div class="border-0 py-2">
-                            <h2 class="" id="heading4">
-                                <div class="bg-white border-0 px-0 d-flex justify-content-between  cursor-pointer">
+                        <div class="border-0">
+                            <h2 class="mb-0" id="heading6">
+                                <div class="accordion-button collapsed bg-white border-0 px-0 d-flex justify-content-between cursor-pointer">
                                     <div class="d-flex align-items-center">
                                         <i class="icon-font-category color-sun font-size-20"></i>
                                         <a href="accordion.html#Collapse" class="px-3 font-size-12 text-decoration-none">بازشوی سقوط(Collapse)
@@ -207,9 +211,9 @@
                                 </div>
                             </h2>
                         </div>
-                        <div class="border-0 py-2">
-                            <h2 class="" id="heading4">
-                                <div class="bg-white border-0 px-0 d-flex justify-content-between  cursor-pointer">
+                        <div class="border-0">
+                            <h2 class="mb-0" id="heading7">
+                                <div class="accordion-button collapsed bg-white border-0 px-0 d-flex justify-content-between cursor-pointer">
                                     <div class="d-flex align-items-center">
                                         <i class="icon-font-category color-sun font-size-20"></i>
                                         <a href="modals.html#modal" class="px-3 font-size-12 text-decoration-none">مدال(modal)
@@ -218,9 +222,9 @@
                                 </div>
                             </h2>
                         </div>
-                        <div class="border-0 py-2">
-                            <h2 class="" id="heading4">
-                                <div class="bg-white border-0 px-0 d-flex justify-content-between  cursor-pointer">
+                        <div class="border-0">
+                            <h2 class="mb-0" id="heading8">
+                                <div class="accordion-button collapsed bg-white border-0 px-0 d-flex justify-content-between cursor-pointer">
                                     <div class="d-flex align-items-center">
                                         <i class="icon-font-category color-sun font-size-20"></i>
                                         <a href="popover.html#popovers" class="px-3 font-size-12 text-decoration-none">popovers
@@ -229,9 +233,9 @@
                                 </div>
                             </h2>
                         </div>
-                        <div class="border-0 py-2">
-                            <h2 class="" id="heading4">
-                                <div class="bg-white border-0 px-0 d-flex justify-content-between  cursor-pointer">
+                        <div class="border-0">
+                            <h2 class="mb-0" id="heading9">
+                                <div class="accordion-button collapsed bg-white border-0 px-0 d-flex justify-content-between cursor-pointer">
                                     <div class="d-flex align-items-center">
                                         <i class="icon-font-category color-sun font-size-20"></i>
                                         <a href="charts.html#charts" class="px-3 font-size-12 text-decoration-none">charts
@@ -240,7 +244,45 @@
                                 </div>
                             </h2>
                         </div>
-
+                        <div class="border-0">
+                            <h2 class="mb-0" id="heading10">
+                                <div class="accordion-button collapsed bg-white border-0 px-0 d-flex justify-content-between cursor-pointer">
+                                    <div class="d-flex align-items-center">
+                                        <i class="icon-font-category color-sun font-size-20"></i>
+                                        <a href="text-editor.html#text-editor" class="px-3 font-size-12 text-decoration-none">ویرایشگر متن
+                                        </a>
+                                    </div>
+                                </div>
+                            </h2>
+                        </div>
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header" id="heading11">
+                                <div class="accordion-button bg-white border-0 px-0 d-flex justify-content-between collapsed cursor-pointer"
+                                     data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false"
+                                     aria-controls="collapse4">
+                                    <div class="d-flex align-items-center">
+                                        <i class="icon-font-category color-sun font-size-20"></i>
+                                        <span class="px-3 font-size-12">آیکون فونت ها(icon fonts)
+                                        </span>
+                                    </div>
+                                    <i class="icon-font-arrow-down font-size-8 arrow"></i>
+                                </div>
+                            </h2>
+                            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="headingOne1"
+                                 data-bs-parent="#accordionExample1">
+                                <div class="accordion-body py-0">
+                                    <ul class="mb-0">
+                                        <li>
+                                            <a href="fontawesome.html#fontawsome" class="text-decoration-none font-size-10">آیکون fontawsome</a>
+                                        </li>
+                                        <li>
+                                            <a href="google-icon.html#google-icon" class="text-decoration-none font-size-10">آیکون گوگل
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -296,6 +338,7 @@
 <script src="assets/vendors/amcharts.js/js/charts.js"></script>
 <script src="assets/vendors/amcharts.js/js/animated.js"></script>
 <script src="assets/vendors/SunEditor/js/suneditor.min.js"></script>
+<script src="assets/vendors/OverlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <script src="assets/js/doc.js"></script>
 
 <script src="assets/js/main.js"></script>

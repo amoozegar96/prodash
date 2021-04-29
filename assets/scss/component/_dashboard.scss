@@ -17,7 +17,82 @@ body {
   &.active {
     right: 0;
   }
-
+  .sidebar-content{
+    transition: width .5s ease;
+    overflow-x: hidden !important;
+    .collapsing-sidebar{
+      width: 30px;
+      height: 30px;
+      left: 8px;
+      top: 5px;
+      padding-left: 2px;
+      border-radius: 0 20px 20px 0;
+      @include media-query("(max-width: 991px)"){
+        display: none !important;
+      }
+    }
+    .logo{
+      img{
+        transition: all .5s ease;
+      }
+      h6{
+        transition: all .5s ease;
+      }
+    }
+    .accordion-button{
+      span,a{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: inline-block;
+        opacity: 1;
+        transition: all .5s ease;
+      }
+      i{
+        &:not(.arrow){
+          transition: all .5s ease;
+          position: relative;
+          transform: scale(1);
+          right: 0;
+        }
+      }
+    }
+  }
+  .active-collapsing{
+    .collapsing-sidebar{
+      padding-left: 0;
+      i{
+        transform: rotate(180deg);
+      }
+    }
+    .logo{
+      img{
+        width: 70px;
+      }
+      h6{
+        opacity: 0;
+        font-size: 0;
+        margin: 0 !important;
+      }
+    }
+    .accordion{
+      pointer-events: none;
+      .accordion-button{
+        span,a{
+          opacity: 0;
+        }
+        i{
+          &:not(.arrow){
+            transform: scale(1.8);
+            right: 22px;
+          }
+          &.arrow{
+            display: none;
+          }
+        }
+      }
+    }
+  }
   .logo {
     img {
       width: 150px;
@@ -59,6 +134,7 @@ body {
 }
 
 .content {
+  transition: width .5s ease;
   .nav-content {
     width: 100%;
     border: 1px solid $color-alabaster;

@@ -11,7 +11,7 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 });
 //----------------tooltip-----------------
 //----------------toast-----------------
-if ($(".toast").length[0]) {
+if ($(".toast").length >= 1) {
     var toastElList = [].slice.call(document.querySelectorAll('.toast'))
     var toastList = toastElList.map(function (toastEl) {
         return new bootstrap.Toast(toastEl)
@@ -317,19 +317,73 @@ am4core.ready(function() {
     }
 
 }); // end am4core.ready()
+am4core.ready(function() {
+
+// Themes begin
+    am4core.useTheme(am4themes_animated);
+// Themes end
+
+// Create chart instance
+    var chart = am4core.create("chartdiv5", am4charts.PieChart);
+
+// Add data
+    chart.data = [ {
+        "country": "Lithuania",
+        "litres": 501.9
+    }, {
+        "country": "Czechia",
+        "litres": 301.9
+    }, {
+        "country": "Ireland",
+        "litres": 201.1
+    }, {
+        "country": "Germany",
+        "litres": 165.8
+    }, {
+        "country": "Australia",
+        "litres": 139.9
+    }, {
+        "country": "Austria",
+        "litres": 128.3
+    }, {
+        "country": "UK",
+        "litres": 99
+    }, {
+        "country": "Belgium",
+        "litres": 60
+    }, {
+        "country": "The Netherlands",
+        "litres": 50
+    } ];
+
+// Add and configure Series
+    var pieSeries = chart.series.push(new am4charts.PieSeries());
+    pieSeries.dataFields.value = "litres";
+    pieSeries.dataFields.category = "country";
+    pieSeries.slices.template.stroke = am4core.color("#fff");
+    pieSeries.slices.template.strokeWidth = 2;
+    pieSeries.slices.template.strokeOpacity = 1;
+
+// This creates initial animation
+    pieSeries.hiddenState.properties.opacity = 1;
+    pieSeries.hiddenState.properties.endAngle = -90;
+    pieSeries.hiddenState.properties.startAngle = -90;
+
+}); // end am4core.ready()
 //----------------charts-----------------
 //----------------summernote-----------------
-// SUNEDITOR.create('editor');
 
-
-
+if ($(".editor").length >= 1) {
+    SUNEDITOR.create('editor');
+}
 
 //----------------custom select-----------------
 
-
-document.querySelector('.custom-select-wrapper').addEventListener('click', function() {
-    this.querySelector('.custom-select').classList.toggle('open');
-})
+if ($(".custom-select-wrapper").length >= 1) {
+    document.querySelector('.custom-select-wrapper').addEventListener('click', function() {
+        this.querySelector('.custom-select').classList.toggle('open');
+    })
+}
 
 for (const option of document.querySelectorAll(".custom-option")) {
     option.addEventListener('click', function() {

@@ -29,7 +29,7 @@
     &.check-custom-orange {
         width: 1em;
         height: 1em;
-        background-color: #fff;
+        background-color: $color-white;
         border: 1px solid rgba(0, 0, 0, .25);
 
         &:checked {
@@ -191,32 +191,4 @@
 }
 .arrow {
     position: relative;
-    height: 15px;
-    width: 15px;
-}
-.arrow::before, .arrow::after {
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    width: 0.15rem;
-    height: 100%;
-    transition: all 0.5s;
-}
-.arrow::before {
-    left: -5px;
-    transform: rotate(-45deg);
-    background-color: $color-sun;
-}
-.arrow::after {
-    left: 5px;
-    transform: rotate(45deg);
-    background-color: $color-sun;
-}
-.open .arrow::before {
-    left: -5px;
-    transform: rotate(45deg);
-}
-.open .arrow::after {
-    left: 5px;
-    transform: rotate(-45deg);
 }
