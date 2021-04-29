@@ -33,7 +33,7 @@ $(".menu-btn").click(function (e) {
 
 var get_hash = window.location.hash
 $("[href='"+get_hash+"']").addClass("color-sun");
-$("[href='"+get_hash+"']").parents(".accordion-collapse").siblings("h2").find(".accordion-button").trigger("click");
+$("[href='"+get_hash+"']").parents(".accordion-collapse").siblings("div").find(".accordion-button").trigger("click");
 $(".sidebar a").click(function () {
     $(this).addClass("color-sun").parent().siblings("li").find("a").removeClass("color-sun")
 });
