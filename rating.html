@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" type="text/css" href="assets/vendors/OverlayScrollbars/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/barrating/css/css-stars.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- plugins css links -->
     <link rel="stylesheet" type="text/css" href="assets/vendors/SunEditor/css/suneditor.min.css">
@@ -312,7 +313,7 @@
                                 <div class="accordion-button collapsed bg-white border-0 px-0 d-flex justify-content-between cursor-pointer">
                                     <div class="d-flex align-items-center">
                                         <i class="icon-font-category color-sun font-size-20"></i>
-                                        <a href="rating.html#rating" class="px-3 font-size-12 text-decoration-none">
+                                        <a href="#rating" class="px-3 font-size-12 text-decoration-none">
                                             امتیازدهی (rating)
                                         </a>
                                     </div>
@@ -355,6 +356,21 @@
 
                 <!-- ------------------------start forms----------------------- -->
                 <div class="forms">
+                    <div id="rating">
+                        <h4 class="border-bottom border-top py-3 my-4">rating</h4>
+                        <div class="rating d-flex align-items-center my-2 my-md-0">
+                            <select data-rating>
+                                <option value=""></option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                                <option value="3"></option>
+                                <option value="4"></option>
+                                <option value="5"></option>
+                            </select>
+                            <span data-set-rating-number class="mx-3 font-size-20 mt-1 color-atomic-tangerine">0/5</span>
+                        </div>
+
+                    </div>
                 </div>
                 <!-- ------------------------end forms----------------------- -->
             </div>
@@ -377,6 +393,7 @@
 <script src="assets/vendors/amcharts.js/js/animated.js"></script>
 <script src="assets/vendors/SunEditor/js/suneditor.min.js"></script>
 <script src="assets/vendors/OverlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<script src="assets/vendors/barrating/js/jquery.barrating.min.js"></script>
 <script src="assets/js/doc.js"></script>
 
 <script src="assets/js/main.js"></script>

@@ -17,6 +17,8 @@
     <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" type="text/css" href="assets/vendors/OverlayScrollbars/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/ion-rangeSlider/css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/data-picker-persian/css/persian-datepicker.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- plugins css links -->
     <link rel="stylesheet" type="text/css" href="assets/vendors/SunEditor/css/suneditor.min.css">
@@ -110,28 +112,28 @@
                                 <div class="accordion-body py-0">
                                     <ul class="mb-0">
                                         <li>
-                                            <a href="bottuns.html#buttons" class="text-decoration-none font-size-10">دکمه ها
+                                            <a href="#buttons" class="text-decoration-none font-size-10">دکمه ها
                                                 (buttons)</a>
                                         </li>
                                         <li>
-                                            <a href="bottuns.html#checkbox" class="text-decoration-none font-size-10">کادر انتخاب
+                                            <a href="#checkbox" class="text-decoration-none font-size-10">کادر انتخاب
                                                 (checkbox)</a>
                                         </li>
                                         <li>
-                                            <a href="bottuns.html#radio" class="text-decoration-none font-size-10">دکمه رادیویی
+                                            <a href="#radio" class="text-decoration-none font-size-10">دکمه رادیویی
                                                 (radio button)
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="bottuns.html#switch" class="text-decoration-none font-size-10">دکمه تعویض
+                                            <a href="#switch" class="text-decoration-none font-size-10">دکمه تعویض
                                                 (switch)</a>
                                         </li>
                                         <li>
-                                            <a href="bottuns.html#range" class="text-decoration-none font-size-10">دکمه رنج (range)
+                                            <a href="#range" class="text-decoration-none font-size-10">دکمه رنج (range)
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="bottuns.html#dropdown" class="text-decoration-none font-size-10">دکمه کشویی
+                                            <a href="#dropdown" class="text-decoration-none font-size-10">دکمه کشویی
                                                 (dropdown)
                                             </a>
                                         </li>
@@ -300,7 +302,7 @@
                                 <div class="accordion-button collapsed bg-white border-0 px-0 d-flex justify-content-between cursor-pointer">
                                     <div class="d-flex align-items-center">
                                         <i class="icon-font-category color-sun font-size-20"></i>
-                                        <a href="datapicker.html#datapicker" class="px-3 font-size-12 text-decoration-none">
+                                        <a href="#datapicker" class="px-3 font-size-12 text-decoration-none">
                                             تقویم (data picker)
                                         </a>
                                     </div>
@@ -328,12 +330,10 @@
             <!-- ------------------------start content------------------------ -->
             <div class="col-xl-9 col-lg-8 col-md-12 col-sm-12 content">
                 <!-- ------------------------start search-box--------------------- -->
-                <div class="nav-content bg-white border-radius-10 box-shadow-1 my-4 py-4 px-3 d-flex justify-content-between">
-                    <div class="d-flex">
-                        <span id="fullscreen" class="d-flex justify-content-center align-items-center icon-font-fullscreen font-weight-bold font-size-22 cursor-pointer"></span>
-                        <div class="search-box border-radius-10 px-3 mx-3 py-2 col-9 col-sm-4 w-100 flex-shrink-0 flex-grow-0">
-                            <input class="border-0 w-100" type="text" placeholder="جستجو...">
-                        </div>
+                <div
+                        class="nav-content bg-white border-radius-10 box-shadow-1 my-4 py-4 px-3 d-flex justify-content-between">
+                    <div class="search-box border-radius-10 px-3 py-2 col-9 col-sm-4">
+                        <input class="border-0 w-100" type="text" placeholder="جستجو...">
                     </div>
                     <div class="btn-group">
                         <button
@@ -355,6 +355,41 @@
 
                 <!-- ------------------------start forms----------------------- -->
                 <div class="forms">
+                    <!-- ------------------------start datapicker----------------------- -->
+                    <div id="datapicker" class="mb-5 pb-5">
+                        <h4 class="border-bottom border-top py-3 my-4"> تقویم</h4>
+                        <div>
+                            <h4 class="py-3 my-1">data picker</h4>
+                            <div class="d-flex data-picker-parent flex-wrap flex-column col-xl-6 px-2 position-relative">
+                                <div class="input-group input-group-sm mb-3">
+                                    <span class="input-group-text span-custom-orange" id="inputGroup-sizing-sm-3">تقویم</span>
+                                    <input type="text" class="normal-example form-control input-custom-orange box-shadow-custom-focus" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                </div>
+                            </div>
+                            <h4 class="py-3 my-1">range data picker</h4>
+                            <div class="two-inline-datepicker d-flex">
+                                <div class="d-flex data-picker-parent flex-wrap flex-column col-xl-6 px-2 position-relative">
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text span-custom-orange" id="inputGroup-sizing-sm-2">از</span>
+                                        <input type="text" class="datepicker-demo set-datepicker range-from-example-alt form-control input-custom-orange box-shadow-custom-focus" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                    <div class="datepicker-demo calender range-from-example" ></div>
+                                </div>
+                                <div class="d-flex data-picker-parent flex-wrap flex-column col-xl-6 px-2 position-relative">
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text span-custom-orange" id="inputGroup-sizing-sm-1">تا</span>
+                                        <input type="text" class="datepicker-demo set-datepicker range-to-example-alt form-control input-custom-orange box-shadow-custom-focus" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                    <div class="datepicker-demo calender range-to-example" ></div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <!-- ------------------------end datapicker----------------------- -->
+
+
                 </div>
                 <!-- ------------------------end forms----------------------- -->
             </div>
@@ -377,6 +412,10 @@
 <script src="assets/vendors/amcharts.js/js/animated.js"></script>
 <script src="assets/vendors/SunEditor/js/suneditor.min.js"></script>
 <script src="assets/vendors/OverlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<script src="assets/vendors/ion-rangeSlider/js/ion.rangeSlider.min.js"></script>
+<script src="assets/vendors/data-picker-persian/js/persian-datepicker.js"></script>
+<script src="assets/vendors/data-picker-persian/js/persian-date.js"></script>
+<script src="assets/vendors/data-picker-persian/js/datepicker-example.js"></script>
 <script src="assets/js/doc.js"></script>
 
 <script src="assets/js/main.js"></script>

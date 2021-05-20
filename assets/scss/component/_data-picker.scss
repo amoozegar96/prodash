@@ -1,0 +1,12 @@
+.range-to-example,
+.range-from-example{
+  position: absolute;
+  display: none;
+  top: 100%;
+  width: calc(100% - 20px);
+  left: 0;
+  right: 10px;
+  .datepicker-plot-area{
+    border-radius: 10px;
+  }
+}

@@ -395,5 +395,56 @@ for (const option of document.querySelectorAll(".custom-option")) {
     })
 }
 
+//----------------ionRangeSlider-----------------
+
+if ($(".js-range-slider").length) {
+    $(".js-range-slider").ionRangeSlider({
+        type: "double",
+        min: 0,
+        max: 10000000,
+        from: 0,
+        to: 10000000,
+        step: 1000,
+        grid: false,
+        grid_snap: false,
+        from_fixed: false,  // fix position of FROM handle
+        to_fixed: false
+    });
+}
+
+function toFarsiNumber(n) {
+    const farsiDigits = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
+
+    return n
+        .toString()
+        .replace(/\d/g, x => farsiDigits[x]);
+}
+
+$(".js-range-slider").on("change", function () {
+    var $inp = $(this);
+    var v = $inp.prop("value");     // input value in format FROM;TO
+    var from = $inp.data("from");   // input data-from attribute
+    var to = $inp.data("to");       // input data-to attribute
+    $(".range-slide").siblings("p").find(".first-price").text(toFarsiNumber(from));
+    $(".range-slide").siblings("p").find(".second-price").text(toFarsiNumber(to));
+});
+
+
+//==================
+// rating
+//==================
+$(document).on("click", ".rating", function () {
+    var check_number = $(this).find(".br-current").attr("data-rating-value") == undefined ? 0 : $(this).find(".br-current").attr("data-rating-value");
+    $(this).find("[data-set-rating-number]").text(check_number + "/5");
+    console.log($(this).find(".br-current").attr("data-rating-value"));
+});
+if ($('[data-rating]').length) {
+    $('[data-rating]').barrating({
+        onSelect: function (t, e, n) {
+            $(n.currentTarget).parents(".rating").trigger("click");
+        }
+    });
+}
+
 
 

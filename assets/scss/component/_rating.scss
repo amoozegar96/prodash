@@ -1,0 +1,17 @@
+.br-widget {
+  a {
+    text-decoration: none;
+    &::before {
+      content: "\F110";
+      font-family: icon-font, serif, sans-serif, cursive, fantasy, monospace;
+      color: #C8C8C8;
+      margin-right: 5px;
+      font-size: 36px;
+    }
+
+    &.br-selected::before, &.br-active::before {
+      color: #FFA259;
+      content: "\F109";
+    }
+  }
+}
